@@ -1,6 +1,8 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import { SunIcon } from "@radix-ui/react-icons";
+import { MoonIcon } from "lucide-react";
 
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
@@ -18,7 +20,7 @@ const ThemeChanger = () => {
           onClick={() => setTheme("light")}
           className="text-gray-300 rounded-full outline-none focus:outline-none">
           <span className="sr-only">Light Mode</span>
-
+     
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-5 h-5"
